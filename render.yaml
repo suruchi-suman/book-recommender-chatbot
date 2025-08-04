@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: book-webhook
+    env: python
+    buildCommand: ""
+    startCommand: python books_webhook.py
+    envVars: []
