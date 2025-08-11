@@ -68,6 +68,7 @@ Paste the Watson Assistant embed code **before `</body>`** tag in your HTML file
     document.head.appendChild(t);
   });
 </script>
+```
 
 ### Step 5: Deployment with GitHub Pages
 
@@ -83,13 +84,6 @@ Follow these steps to deploy your chatbot website using **GitHub Pages**:
    - Make sure your main HTML file is named `index.html`.
 
 3. **Commit and Push Changes**
-   - If using the web interface, drag and drop your files and click **Commit changes**.
-   - If using Git locally:
-     ```bash
-     git add .
-     git commit -m "Add project files"
-     git push origin main
-     ```
 
 4. **Enable GitHub Pages**
    - Go to **Settings** in your repository.
