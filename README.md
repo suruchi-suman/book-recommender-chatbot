@@ -69,51 +69,38 @@ Paste the Watson Assistant embed code **before `</body>`** tag in your HTML file
   });
 </script>
 
-🌐 Deployment with GitHub Pages
-Follow these steps to deploy your chatbot website using GitHub Pages:
+### Step 5: Deployment with GitHub Pages
 
-Create a GitHub Repository
+Follow these steps to deploy your chatbot website using **GitHub Pages**:
 
-Go to GitHub and create a new repository.
+1. **Create a GitHub Repository**
+   - Go to [GitHub](https://github.com) and create a new repository.
+   - Name it anything you like (e.g., `book-recommender-chatbot`).
+   - Make sure to initialize it with a `README.md`.
 
-Name it anything you like (e.g., book-recommender-chatbot).
+2. **Upload Your Project Files**
+   - Add your HTML, CSS, JavaScript, and any other required files to the repository.
+   - Make sure your main HTML file is named `index.html`.
 
-Make sure to initialize it with a README.md.
+3. **Commit and Push Changes**
+   - If using the web interface, drag and drop your files and click **Commit changes**.
+   - If using Git locally:
+     ```bash
+     git add .
+     git commit -m "Add project files"
+     git push origin main
+     ```
 
-Upload Your Project Files
+4. **Enable GitHub Pages**
+   - Go to **Settings** in your repository.
+   - Scroll down to the **Pages** section.
+   - Under **Source**, select `main` branch and `/ (root)` folder.
+   - Click **Save**.
 
-Add your HTML, CSS, JavaScript, and any other required files to the repository.
+5. **Access Your Live Website**
+   - GitHub will provide a deployment URL in the Pages section.
+   - Example: `https://your-username.github.io/book-recommender-chatbot`
 
-Make sure your main HTML file is named index.html.
-
-Commit and Push Changes
-
-If using the web interface, drag and drop your files and click Commit changes.
-
-If using Git locally:
-
-bash
-Copy
-Edit
-git add .
-git commit -m "Add project files"
-git push origin main
-Enable GitHub Pages
-
-Go to Settings in your repository.
-
-Scroll down to the Pages section.
-
-Under Source, select main branch and / (root) folder.
-
-Click Save.
-
-Access Your Live Website
-
-GitHub will provide a deployment URL in the Pages section.
-
-Example: https://your-username.github.io/book-recommender-chatbot
-
-💡 Tip: If your site isn’t showing updated changes, clear your browser cache or do a hard refresh (Ctrl + Shift + R).
+   **Tip:** If your site isn’t showing updated changes, clear your browser cache or do a hard refresh (`Ctrl + Shift + R`).
 
 
