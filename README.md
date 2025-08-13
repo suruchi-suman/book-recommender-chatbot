@@ -6,11 +6,11 @@ An AI-powered virtual assistant designed to help readers discover books based on
 
 ## 💡 Features
 
-- 📖 Personalized book recommendations (by genre, author, mood, budget, etc.)
-- 🤖 Smart dialog flow using Watson Assistant
-- 🎭 Fun interactions (book puns, facts, fortunes)
-- 🏬 Virtual bookstore tour (via iframe)
-- 💬 Seamless web chat integration
+- Personalized book recommendations (by genre, author, mood, budget, etc.)
+- Smart dialog flow using Watson Assistant
+- Fun interactions (book puns, facts, fortunes)
+- Virtual bookstore tour (via iframe)
+- Seamless web chat integration
 
 ---
 
