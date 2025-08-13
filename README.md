@@ -1,10 +1,10 @@
-# 📚 Book Recommender Chatbot using IBM Watson Assistant
+# 🕮 Book Recommender Chatbot using IBM Watson Assistant
 
 An AI-powered virtual assistant designed to help readers discover books based on their preferences using **IBM Watson Assistant**. This chatbot recommends books based on genres, moods, authors, budget, and more. It also includes fun features like book trivia, witty puns, and even a virtual bookstore tour!
 
 ---
 
-## 💡 Features
+## 🕮 Features
 
 - Personalized book recommendations (by genre, author, mood, budget, etc.)
 - Smart dialog flow using Watson Assistant
