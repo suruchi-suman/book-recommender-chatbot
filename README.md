@@ -14,7 +14,7 @@ An AI-powered virtual assistant designed to help readers discover books based on
 
 ---
 
-## 🛠️ Built With
+## 🕮 Built With
 
 - IBM Watson Assistant
 - HTML/CSS (for web embedding)
@@ -22,7 +22,7 @@ An AI-powered virtual assistant designed to help readers discover books based on
 
 ---
 
-## 🚀 How to Reproduce This Project
+## 🕮 How to Reproduce This Project
 
 ### Step 1: Set Up Watson Assistant
 
