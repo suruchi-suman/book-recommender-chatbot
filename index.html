@@ -2,213 +2,225 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Books - Your Bookstore</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #fff0f5;
-            color: #333;
-        }
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Books - Your Bookstore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #2E0854, #6A0DAD, #C71585);
+      color: #f5f5f5;
+    }
 
-        header {
-            background: linear-gradient(135deg, #ff4e8b, #ff8fa3);
-            color: #fff;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
+    header {
+      background: linear-gradient(135deg, #6A0DAD, #C71585);
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+    }
 
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin: 0;
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 0;
+      color: #FFFF00; 
+    }
 
-        nav {
-            background-color: #ff5c8a;
-            display: flex;
-            justify-content: center;
-            padding: 0.8rem 0;
-        }
+    nav {
+      background-color: #2E0854;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem 0;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+    }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
 
-        nav a:hover {
-            color: #ffd9e2;
-        }
+    nav a:hover {
+      color: #FF00FF;
+    }
 
-        .hero {
-            background: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg') center/cover no-repeat;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-align: center;
-        }
+    .hero {
+      background: url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
 
-        .hero-text {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 1rem 2rem;
-            border-radius: 25px;
-        }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(106, 13, 173, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }
 
-        .hero h2 {
-            font-size: 2.8rem;
-            max-width: 600px;
-            margin: 0;
-        }
+    .hero h2 {
+      font-size: 2.8rem;
+      max-width: 600px;
+      margin: 0;
+      color: #FFD700;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
 
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            font-family: 'Playfair Display', serif;
-            color: #ff4e8b;
-        }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      color: #FFFF00; 
+    }
 
-        .books-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
 
-        .book {
-            background-color: #ffe6ee;
-            padding: 1rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .book {
+      background: rgba(46, 8, 84, 0.8);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .book:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        }
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 0, 255, 0.6);
+    }
 
-        .book img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 0.8rem;
-        }
+    .book img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.8rem;
+    }
 
-        .book h3 {
-            margin: 0.5rem 0;
-            font-size: 1.2rem;
-            color: #ff4e8b;
-        }
+    .book h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      color: #FFD700;
+    }
 
-        footer {
-            background-color: #ff5c8a;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
+    footer {
+      background-color: #2E0854;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 -2px 20px rgba(255, 0, 255, 0.3);
+    }
 
-        button {
-            background-color: #ff4e8b;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-weight: bold;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    button {
+      background-color: #FFD700;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #2E0854;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-        button:hover {
-            background-color: #e03d75;
-        }
-    </style>
+    button:hover {
+      background-color: #6A0DAD;
+      color: #FFD700;
+      box-shadow: 0 0 12px #FF00FF;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Smart Book Shop</h1>
-        <p>Your Gateway to the World of Reading</p>
-    </header>
+  <header>
+    <h1>Smart Book Shop</h1>
+    <p>Your Gateway to the World of Reading</p>
+  </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#categories">Categories</a>
-        <a href="#best-sellers">Best Sellers</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#best-sellers">Best Sellers</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h2>Discover, Explore & Fall in Love with Books Again</h2>
-        </div>
-    </section>
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Discover, Explore & Fall in Love with Books Again</h2>
+    </div>
+  </section>
 
-    <section class="container" id="categories">
-        <h2 class="section-title">Categories</h2>
-        <div class="books-grid">
-            <div class="book">
-                <img src="https://www.rd.com/wp-content/uploads/2022/03/best-books-of-2023-so-far-opener.png" alt="Fiction">
-                <h3>Fiction</h3>
-                <button>Explore</button>
-            </div>
-            <div class="book">
-                <img src="https://wizdomapp.com/wp-content/uploads/2024/10/product-jpeg-500x500-1-500x490.webp" alt="Non-fiction">
-                <h3>Non-Fiction</h3>
-                <button>Explore</button>
-            </div>
-            <div class="book">
-                <img src="https://media.wired.com/photos/65e86b8aa982e7c6566b6b6d/2:3/w_1332,h_1998,c_limit/best-sci-fi-books.jpg" alt="Science Fiction">
-                <h3>Science Fiction</h3>
-                <button>Explore</button>
-            </div>
-            <div class="book">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/gh-best-romance-books-64ecb8c82221e.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*" alt="Romance">
-                <h3>Romance</h3>
-                <button>Explore</button>
-            </div>
-        </div>
-    </section>
+  <section class="container" id="categories">
+    <h2 class="section-title">Categories</h2>
+    <div class="books-grid">
+      <div class="book">
+        <img src="https://www.rd.com/wp-content/uploads/2022/03/best-books-of-2023-so-far-opener.png" alt="Fiction">
+        <h3>Fiction</h3>
+        <button>Explore</button>
+      </div>
+      <div class="book">
+        <img src="https://wizdomapp.com/wp-content/uploads/2024/10/product-jpeg-500x500-1-500x490.webp" alt="Non-fiction">
+        <h3>Non-Fiction</h3>
+        <button>Explore</button>
+      </div>
+      <div class="book">
+        <img src="https://media.wired.com/photos/65e86b8aa982e7c6566b6b6d/2:3/w_1332,h_1998,c_limit/best-sci-fi-books.jpg" alt="Science Fiction">
+        <h3>Science Fiction</h3>
+        <button>Explore</button>
+      </div>
+      <div class="book">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/gh-best-romance-books-64ecb8c82221e.png?crop=0.502xw:1.00xh;0.250xw,0&resize=1200:*" alt="Romance">
+        <h3>Romance</h3>
+        <button>Explore</button>
+      </div>
+    </div>
+  </section>
 
-    <section class="container" id="best-sellers">
-        <h2 class="section-title">Best Sellers</h2>
-        <div class="books-grid">
-            <div class="book">
-                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Best Seller 1">
-                <h3>The Midnight Library</h3>
-                <button>Buy Now</button>
-            </div>
-            <div class="book">
-                <img src="https://cdn.shopify.com/s/files/1/0194/2855/files/atomic-habits_600x600.jpg?v=1624825894" alt="Best Seller 2">
-                <h3>Atomic Habits</h3>
-                <button>Buy Now</button>
-            </div>
-            <div class="book">
-                <img src="https://i.insider.com/61ef13782b43ff00185e54c6?width=700" alt="Best Seller 3">
-                <h3>Project Hail Mary</h3>
-                <button>Buy Now</button>
-            </div>
-        </div>
-    </section>
+  <section class="container" id="best-sellers">
+    <h2 class="section-title">Best Sellers</h2>
+    <div class="books-grid">
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Best Seller 1">
+        <h3>The Midnight Library</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="book">
+        <img src="https://cdn.shopify.com/s/files/1/0194/2855/files/atomic-habits_600x600.jpg?v=1624825894" alt="Best Seller 2">
+        <h3>Atomic Habits</h3>
+        <button>Buy Now</button>
+      </div>
+      <div class="book">
+        <img src="https://i.insider.com/61ef13782b43ff00185e54c6?width=700" alt="Best Seller 3">
+        <h3>Project Hail Mary</h3>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
 
-    <footer id="contact">
-        <p>&copy; 2025 Smart Books. All rights reserved.</p>
-    </footer>
-<script>
+  <footer id="contact">
+    <p>&copy; 2025 Smart Books. All rights reserved.</p>
+  </footer>
+
+  <script>
   window.watsonAssistantChatOptions = {
     integrationID: "161c6495-92a3-438a-ac5b-d35cf589db56", // The ID of this integration.
     region: "eu-de", // The region your integration is hosted in.
@@ -222,5 +234,4 @@
   });
 </script>
 </body>
-
 </html>
